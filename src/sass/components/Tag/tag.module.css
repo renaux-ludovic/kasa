@@ -1,0 +1,22 @@
+.tag {
+  background-color: #ff6060;
+  margin-right: 10px;
+  min-width: 115px;
+  border-radius: 10px;
+  padding: 5px;
+}
+.tag p {
+  font-size: 14px;
+  font-weight: 500;
+  margin: 0 10px 0 10px;
+  color: white;
+  text-align: center;
+}
+
+@media screen and (max-width: 375px) {
+  p {
+    font-size: 10px;
+  }
+}
+
+/*# sourceMappingURL=tag.module.css.map */

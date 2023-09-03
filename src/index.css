@@ -1,0 +1,5 @@
+@import "sass/base/Reset/reset.module.scss";
+
+@import "sass/pages/Home/home.module.scss";
+
+@import "sass/base/Typography/typography.module.scss";

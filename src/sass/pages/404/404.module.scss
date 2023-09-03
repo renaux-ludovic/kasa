@@ -1,0 +1,41 @@
+.errorContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  h1,
+  p,
+  a {
+    color: #ff6060;
+    font-family: Montserrat;
+  }
+
+  p,
+  a {
+    margin-bottom: 140px;
+  }
+
+  h1 {
+    font-size: 288px;
+    font-weight: 700;
+    margin-bottom: 80px;
+  }
+
+  p {
+    font-size: clamp(18px, 4vw, 36px);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .errorContainer {
+    h1 {
+      font-size: 96px;
+      margin-top: 100px;
+    }
+
+    p {
+      text-align: center;
+    }
+  }
+}

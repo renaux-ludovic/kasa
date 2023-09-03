@@ -1,0 +1,43 @@
+.banner {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  width: 100%;
+  height: 220px;
+  background-position: center;
+  border-radius: 25px;
+}
+.banner::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 25px;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.banner h1 {
+  position: relative;
+  z-index: 2;
+  font-size: clamp(24px, 4vw, 48px);
+  color: white;
+}
+
+@media screen and (max-width: 768px) {
+  .banner {
+    justify-content: flex-start;
+    height: 110px;
+    border-radius: 10px;
+  }
+  .banner::before {
+    content: "";
+    position: absolute;
+    border-radius: 10px;
+  }
+  .banner h1 {
+    margin: 20px;
+  }
+}
+
+/*# sourceMappingURL=banner.module.css.map */

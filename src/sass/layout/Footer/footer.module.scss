@@ -1,0 +1,22 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  background-color: black;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 210px;
+
+  img {
+    max-width: 100%;
+    height: 40px;
+  }
+
+  p {
+    color: white;
+    font-size: clamp(12px, 4vw, 24px);
+    margin: 30px;
+  }
+}

@@ -1,0 +1,50 @@
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  box-sizing: border-box;
+  margin: 45px 100px;
+}
+
+.containerLogo img {
+  min-width: 100px;
+  max-width: 100%;
+}
+
+.mainNav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 60px;
+
+  a {
+    font-family: "Montserrat", sans-serif;
+    font-size: clamp(12px, 4vw, 24px);
+    color: #ff6060;
+    text-decoration: none;
+
+    &:focus {
+      text-decoration: underline;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header {
+    margin: 5%;
+  }
+
+  .mainNav {
+    gap: 30px;
+    margin-left: 10px;
+
+    a {
+      text-transform: uppercase;
+    }
+  }
+
+  .containerLogo {
+    min-width: 60px;
+    max-width: 100px;
+  }
+}

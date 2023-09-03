@@ -1,0 +1,14 @@
+.collapseContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+  gap: 30px;
+}
+
+@media  screen and (max-width: 768px) {
+  
+  .AboutBanner {
+  height: 225px;
+  }
+}

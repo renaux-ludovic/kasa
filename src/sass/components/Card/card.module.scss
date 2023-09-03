@@ -1,0 +1,41 @@
+.accomodationContainer {
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  width: 100%;
+  height: 340px;
+  padding: 20px;
+  text-align: left;
+  background-color: #ff6060;
+  border-radius: 10px;
+  box-sizing: border-box;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+      360deg,
+      rgba(0, 0, 0, 0.36429183489802175) 0%,
+      rgba(219, 99, 102, 0.18502012621454833) 50%
+    );
+    border-radius: 10px;
+  }
+
+  .accomodationTitle {
+    z-index: 2;
+    color: #fff;
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 426px) {
+  .accomodationContainer {
+    width: 100%;
+    height: 255px;
+    margin: 0;
+  }
+}

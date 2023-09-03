@@ -1,0 +1,35 @@
+.errorContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.errorContainer h1,
+.errorContainer p,
+.errorContainer a {
+  color: #ff6060;
+}
+.errorContainer p,
+.errorContainer a {
+  margin-bottom: 140px;
+}
+.errorContainer h1 {
+  font-size: 288px;
+  font-weight: 700;
+  margin-bottom: 80px;
+}
+.errorContainer p {
+  font-size: clamp(18px, 4vw, 36px);
+}
+
+@media screen and (max-width: 768px) {
+  .errorContainer h1 {
+    font-size: 96px;
+    margin-top: 100px;
+  }
+  .errorContainer p {
+    text-align: center;
+  }
+}
+
+/*# sourceMappingURL=404.module.css.map */
